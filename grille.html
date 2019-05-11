@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!--- style de la page avec lien css--->
+    <link rel="stylesheet" href="css2.css" HTTP-EQUIV="Refresh" CONTENT="2; URL=P:\projet miroir\Alban\v0\grille.html">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title> Miroir </title>
+        
+   
+  </head>
+
+  <body>
+    <header >Menu</header>
+
+    <div class="wrapper">
+        
+      <article>
+        <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DZ06evO4t0li0" width="400" height="900" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </article>
+      <nav>
+      <h1>
+      <!--script de l'horloge (début)--->
+  			<div id="div_horloge"></div>
+
+			<script type="text/javascript">
+			window.onload=function() {
+  			horloge('div_horloge');
+			};
+			function horloge(el) {
+  			if(typeof el=="string") { el = document.getElementById(el); }
+  			function actualiser() {
+   		 	var date = new Date();
+   			var str = date.getHours();
+    		str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+    		str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+    		el.innerHTML = str;
+  			}
+  			actualiser();
+  			setInterval(actualiser,100);
+			}
+			</script>
+    
+			<!--script de l'horloge (fin)--->
+    
+    
+            </h1>
+      <img src="time7.gif" style="text-align: center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <!-- Bloc météo -->
+<div id="cont_MTA1M3w0fDN8NXw1fDAwMDAwMHwxfEZGRkZGRnxjfDE-"><div 
+id="spa_MTA1M3w0fDN8NXw1fDAwMDAwMHwxfEZGRkZGRnxjfDE-"><a id="a_MTA1M3w0fDN8NXw1fDAwMDAwMHwxfEZGRkZGRnxjfDE-" 
+href="http://www.meteocity.com/france/bourg-en-bresse_v1053/" target="_blank" 
+style="color:#999;text-decoration:none;">M&eacute;t&eacute;o Bourg-en-Bresse</a> </div><script 
+type="text/javascript" src="http://widget.meteocity.com/js/MTA1M3w0fDN8NXw1fDAwMDAwMHwxfEZGRkZGRnxjfDE-"></script>
+</div>
+      </nav>
+      <aside>Actualités:
+        <div style="height:900px;width:33em;overflow:auto;">
+      
+      <div id="content"></div>
+<script type="text/javascript" language="javascript" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fwww.francetvinfo.fr%2Ftitres.rss&amp;mode=javascript&amp;showonly=&amp;maxitems=500&amp;showdescs=1&amp;desctrim=0&amp;descmax=0&amp;tabwidth=100%25&amp;utf8=1&amp;linktarget=_blank&amp;textsize=inherit&amp;bordercol=transparent&amp;headbgcol=transparent&amp;headtxtcol=%23ffffff&amp;titlebgcol=%23fffff&amp;titletxtcol=%23ffffff&amp;itembgcol=transparent&amp;itemtxtcol=%23ffffff&amp;ctl=0">
+</script>
+        </div>
+    </div> <!-- /wrapper -->
+
+    <footer>footer</footer>
+  </body>
+   
+  <script>//récuperer le fichier
+  </script>
+</html>
